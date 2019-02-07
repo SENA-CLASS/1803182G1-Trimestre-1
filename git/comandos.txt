@@ -1,0 +1,16 @@
+Curso de GIT
+
+1- ver la versión de GIT
+git version
+2. para clonar o descargar un repositorio de un servidor(github, gitlab, bitbucker)
+git clone [url del repositorio]
+ejemplo
+git clone https://github.com/SENA-CEET/1803182G1-Trimestre-1.git
+
+
+3. configurar el usuario y el correo para hacer manejar GIT
+git config --global user.mail "correo electronico"
+git config --global user.name "nombre usuario"
+
+4. limpiar pantalla
+clear
