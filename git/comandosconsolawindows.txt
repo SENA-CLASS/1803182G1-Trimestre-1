@@ -1,0 +1,26 @@
+
+
+1. comando que se una para moverme entre carpetas
+cd [ruta donde quiero ir]
+
+2. comando para ver el contenido de una carpetas
+dir
+
+3. comando para salir o devolverme en una path 
+cd ..
+
+4. comando para crear una carpeta
+mkdir [nombre carpeta]
+
+5. muestra el arbol de carptetas
+tree
+
+6. borrar una carpeta
+rmdir [nombre de la carpeta]
+
+7. cambiar nombre carpeta
+rename [nombre carpeta viejo] [nombre carpeta nuevo]
+
+8 . mover una carpeta o archivos
+move [path origen] [path destino]
+
