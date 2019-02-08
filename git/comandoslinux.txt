@@ -1,0 +1,5 @@
+1. muestra la ruta(path) 
+pwd
+
+2. mostras el contenido de una carpeta
+ls

@@ -14,3 +14,20 @@ git config --global user.name "nombre usuario"
 
 4. limpiar pantalla
 clear
+
+5. pasar los archivos del modified a staged
+git add [archivo]
+git add .
+
+6. para ver el estado del repositorio
+git status
+
+7. para pasar archivos del area de preparación(staging area) a confirmación(committed area)
+git commit //este me abre el editor de texto por defecto
+git commit -m "mensaje del commit"
+
+8. inicializar un repositorio
+git init
+
+9. para ver los commits
+git log
