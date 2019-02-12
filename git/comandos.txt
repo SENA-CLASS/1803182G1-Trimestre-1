@@ -31,3 +31,39 @@ git init
 
 9. para ver los commits
 git log
+
+10. para ver la configuración de git
+git config --list
+git config -l
+
+11. para ver la diferencia entre cambios a nivel de archivo o contenido
+git diff
+git diff --staged // muestra los cambios que estan en el area de preparación(staggind area)
+git diff --chached // muestra lo que esta en el area de preparación
+
+12. hacer un commit de lo que esta en el de todo lo que esta con seguimiento sin importar el area
+git commit -a -m 'added new benchmarks'
+
+13. borrar un archivo y dejar ese delete en el area de preparación
+git rm [nombre archivo]
+git rm -f [nombre archivo ] para borrar el archivo si esa en el area de preparación
+
+14. cambiar el nombre de una archivo que esta en el area de preparación
+git mv [nombre archivo viejo] [nombre archivo nuevo]
+
+15. ver confirmaciones
+git log
+git log -p sirve para ver todos los cambios de cada archivo al detalle ademas de todos los commits
+git log [checksum commit] -p para ver los cambios de un commit especifico
+git log -p -[numero] muestra los cambios de los archivo dependediendo el numero de commits que se le solicita
+git log --stat muestra estadisticas de los commits
+git log --pretty=oneline
+
+16. commit con coauthor
+en el mensaje del commit se debe colocar
+Co-authored-by: name <name@example.com>
+
+17. problemas con usuario
+BORRAR LAS CREDENCIALES DE LOS USUARIOS abrir el cmd 
+Ubicarse en la ruta C:\Program Files\Git\mingw64\libexec\git-core y ejecutar el comando git-credential-manager.exe uninstall
+
