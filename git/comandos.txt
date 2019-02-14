@@ -58,6 +58,44 @@ git log [checksum commit] -p para ver los cambios de un commit especifico
 git log -p -[numero] muestra los cambios de los archivo dependediendo el numero de commits que se le solicita
 git log --stat muestra estadisticas de los commits
 git log --pretty=oneline
+git log --graph muestra una grafica de los commits y los branch
+
+Opción	Descripción para git log
+-p
+Muestra el parche introducido en cada confirmación.
+
+--stat
+Muestra estadísticas sobre los archivos modificados en cada confirmación.
+
+--shortstat
+Muestra solamente la línea de resumen de la opción --stat.
+
+--name-only
+Muestra la lista de archivos afectados.
+
+--name-status
+Muestra la lista de archivos afectados, indicando además si fueron añadidos, modificados o eliminados.
+
+--abbrev-commit
+Muestra solamente los primeros caracteres de la suma SHA-1, en vez de los 40 caracteres de que se compone.
+
+--relative-date
+Muestra la fecha en formato relativo (por ejemplo, “2 weeks ago” (“hace 2 semanas”)) en lugar del formato completo.
+
+--graph
+Muestra un gráfico ASCII con la historia de ramificaciones y uniones.
+
+--pretty
+Muestra las confirmaciones usando un formato alternativo. Posibles opciones sonlineon oneline, short, full, fuller y format (mediante el cual puedes especificar tu propio formato).
+
+--since
+Muestra el log de los commits desde una fecha especifica hasta la fecha actual
+
+--untill
+Muestra una log de los commits desde el inicio hasta la fecha buscada
+
+-all-match
+Ten en cuenta que si quieres aplicar las dos opciones anteriores simultáneamente, tienes que añadir
 
 16. commit con coauthor
 en el mensaje del commit se debe colocar
@@ -67,3 +105,9 @@ Co-authored-by: name <name@example.com>
 BORRAR LAS CREDENCIALES DE LOS USUARIOS abrir el cmd 
 Ubicarse en la ruta C:\Program Files\Git\mingw64\libexec\git-core y ejecutar el comando git-credential-manager.exe uninstall
 
+18- borrar la configuración de git
+eliminar el archivo .gitconfig que se encuentra en la ruta usuario c:/user/[nombre usuario]
+
+19. para pasar un archivo del area de preparación a working tree
+git reset
+OJO: se puede perder información del area de preparación
