@@ -111,3 +111,7 @@ eliminar el archivo .gitconfig que se encuentra en la ruta usuario c:/user/[nomb
 19. para pasar un archivo del area de preparación a working tree
 git reset
 OJO: se puede perder información del area de preparación
+
+20. 
+git config --global credential.helper store // para que almacene las CREDENCIALES
+git config --global credential.helper default // para que no almacene las CREDENCIALES
