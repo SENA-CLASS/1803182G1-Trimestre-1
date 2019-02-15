@@ -115,3 +115,21 @@ OJO: se puede perder información del area de preparación
 20. 
 git config --global credential.helper store // para que almacene las CREDENCIALES
 git config --global credential.helper default // para que no almacene las CREDENCIALES
+
+21 modificar el ultimo commit
+git commit --amend
+
+22. repurar el working tree
+git reset HEAD [nombre archivo] // ojo para este debe haber hecho un commit
+git rm --cached [nombre archivo] -f // ojo que no se hayan hecho commit
+
+23. recuperar el area preparacion
+git checkout -- [nombre archivo]
+
+24. quiero eliminar commits
+git reset [hash del commit] --hard // elimina todo el working tree
+git reset [hash del commit] --mixed // elimina los commits y los archivos quedan en el working tree
+git reset [hash del commit] --soft // elimina los commits y los archivos de que estaban en lo commits los deja en area de preparación
+
+
+
