@@ -134,3 +134,12 @@ git reset [hash del commit] --soft // elimina los commits y los archivos de que 
 25. para ver los remotos
 git remote // listar los remotos
 git remote add [nombre remoto] [url del remoto] // adicionar un remoto externo
+git remte -v // para ver los remotos y las urls
+
+26. para traer y convinar los remotos
+git fetch [nombre remoto] [rama] //traer la base de datos de git NOTA: toca combinar a mano
+git pull [nombre remoto] [rama] // traey y fusiona las ramas NOTA: combina automaticamente si puede si no toca a mano
+
+27. enviar repositorios
+git push // manda el repositorio por defecto que es el origin
+git push [nombre remoto] [rama]
