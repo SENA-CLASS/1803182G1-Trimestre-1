@@ -131,5 +131,6 @@ git reset [hash del commit] --hard // elimina todo el working tree
 git reset [hash del commit] --mixed // elimina los commits y los archivos quedan en el working tree
 git reset [hash del commit] --soft // elimina los commits y los archivos de que estaban en lo commits los deja en area de preparación
 
-
-
+25. para ver los remotos
+git remote // listar los remotos
+git remote add [nombre remoto] [url del remoto] // adicionar un remoto externo
