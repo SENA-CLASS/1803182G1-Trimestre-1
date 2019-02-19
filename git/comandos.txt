@@ -143,3 +143,17 @@ git pull [nombre remoto] [rama] // traey y fusiona las ramas NOTA: combina autom
 27. enviar repositorios
 git push // manda el repositorio por defecto que es el origin
 git push [nombre remoto] [rama]
+
+28. etiquetas (tag)
+git tag
+git tag -l // lista los tags
+git tag -a [version] -m [mensaje de la versión]
+git tag -a [version] // me manda al vim para agregar el mensaje
+git show [version] // muestra la información de la versión
+git tag -d [versión] // borra la tag
+git tag -f -a [version] [checksum] -m [mensaje] // crear una nueva etiqueta en un commit especifico 
+git push [remoto] [tag] // push de la tag
+git push --delete [remoto] [tag]
+git push --tags // envia todas etiquetas
+git checkout [version] // para pasarme a la etiquetas
+git checkout -b [branch] [version] // crea un branch con el codigo que estaba en la etiqueta
