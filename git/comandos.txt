@@ -157,3 +157,11 @@ git push --delete [remoto] [tag]
 git push --tags // envia todas etiquetas
 git checkout [version] // para pasarme a la etiquetas
 git checkout -b [branch] [version] // crea un branch con el codigo que estaba en la etiqueta
+
+29. ramas
+git branch [nombre rama]
+git checkout [nombre rama o checksum commit]
+git checkout -b [nombre rama] // crea la rama y se cambia a ella
+
+30- rebase
+git rebase [branch]
