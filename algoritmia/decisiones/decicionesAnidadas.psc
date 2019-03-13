@@ -7,7 +7,6 @@ Proceso decicionesAnidadas
 		SiNo
 			Escribir "el numero es positivo impar";
 		FinSi
-
 	SiNo
 		a=a*(-1);
 		Si (a%2)==0 Entonces
