@@ -4,24 +4,35 @@ Proceso mayor
 	Dimension a[size]; // 4 bytes * 10 = 40bytes 
 	
 	// llenar arreglo
-	para i=0 hasta size-1 con paso 1 hacer
+	i=0;
+	Mientras i<size Hacer
 		Escribir "ingrese el valor para el arreglo en la posición [",i,"]";
 		leer a[i];
-	FinPara
+		i=i+1;
+	FinMientras
+	// encuentra el numero mayor
 	m=a[0];
-	Para i<-1 Hasta size-1 Con Paso 1 Hacer
+	i=1;
+	Mientras i<size Hacer
 		Si a[i]>m Entonces
 			m=a[i];
 		FinSi
-	FinPara
+		i=i+1;
+	FinMientras
 	// mostrar el arreglo
-	para i=0 hasta size-1 con paso 1 hacer
+	i=0;
+	Mientras i<size Hacer
+		
 		Escribir "el valor para el arreglo en la posición [",i,"] es: ",a[i];
-	FinPara
-	
-	para i=0 hasta size-1 con paso 1 hacer
+		i=i+1;
+	FinMientras
+	// este ciclo ubica las posiciones del numero mayor
+	i=0;
+	Mientras i<size Hacer
+		
 		Si a[i]==m Entonces
 			Escribir "el numero mayor es: ",m," y esta en la posición ", i ;
 		FinSi
-	FinPara
+		i=i+1;
+	FinMientras
 FinProceso
